@@ -56,6 +56,13 @@ on init
 on early-fs
     start vold
 
+    mkdir /dev/cpuset/camera-daemon
+    write /dev/cpuset/camera-daemon/cpus 0-7
+    write /dev/cpuset/camera-daemon/mems 0
+    chown system system /dev/cpuset/camera-daemon
+    chown system system /dev/cpuset/camera-daemon/tasks
+    chmod 0664 /dev/cpuset/camera-daemon/tasks
+
 on fs
     start hwservicemanager
     mount_all /vendor/etc/fstab.qcom --early
