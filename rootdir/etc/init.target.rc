@@ -200,6 +200,10 @@ on boot
     write /sys/module/cpu_boost/parameters/dynamic_stune_boost_ms 1500
     write /dev/stune/top-app/schedtune.sched_boost 15
 
+    # Report max frequency to unity tasks
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
     # Disable wsf, beacause we are using efk.
     # wsf Range : 1..1000 So set to bare minimum value 1.
     write /proc/sys/vm/watermark_scale_factor 1
