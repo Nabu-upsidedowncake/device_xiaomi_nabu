@@ -208,6 +208,11 @@ on property:vendor.usb.controller=*
 #Load WLAN driver
     insmod /vendor/lib/modules/qca_cld3_wlan.ko
 
+#Hide magisk
+    # Restrict permissions to socket file
+    # to hide Magisk & co.
+    chmod 440 /proc/net/unix
+
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
