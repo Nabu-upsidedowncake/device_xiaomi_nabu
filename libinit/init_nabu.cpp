@@ -18,6 +18,8 @@
 #include "property_service.h"
 #include "vendor_init.h"
 
+#include <fs_mgr_dm_linear.h>
+
 struct device_variant
 {
   const std::string model;
@@ -84,4 +86,14 @@ void witch_nabu()
   property_override("ro.boot.hardware.revision", ::android::base::GetProperty("ro.boot.hwversion", "").c_str());
 }
 
-void vendor_load_properties() { witch_nabu(); }
+void vendor_load_properties() {
+  witch_nabu();
+
+#ifdef __ANDROID_RECOVERY__
+  std::string buildtype = ::android::base::GetProperty("ro.build.type", "userdebug");
+  if (buildtype != "user") {
+    property_override("ro.debuggable", "1");
+    property_override("ro.adb.secure.recovery", "0");
+  }
+#endif
+}
