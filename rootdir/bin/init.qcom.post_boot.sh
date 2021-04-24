@@ -58,19 +58,15 @@ case "$target" in
 	echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
 
 	# Turn off scheduler boost at the end
-	echo 0 > /proc/sys/kernel/sched_boost
+	echo 1 > /proc/sys/kernel/sched_boost
 
 	# configure governor settings for silver cluster
-	echo 1209600 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
-	echo 576000 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
 
 	# configure governor settings for gold cluster
-	echo 1612800 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl
 
 	# configure governor settings for gold+ cluster
-	echo 1612800 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl
 
         # Enable oom_reaper
