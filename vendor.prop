@@ -198,6 +198,7 @@ dalvik.vm.heaptargetutilization=0.75
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
+debug.sf.layer_caching_active_layer_timeout_ms=1000
 ro.surface_flinger.use_color_management=true
 ro.vendor.display.ad=1
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
