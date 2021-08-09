@@ -1,2 +1,5 @@
 # radio
 ro.radio.noril=true
+
+# WFD
+persist.debug.wfd.enable=1
