@@ -71,6 +71,16 @@ void set_device_properties(const dv &variant)
   property_override("vendor.usb.product_string", variant.model.c_str());
 }
 
+static const char *build_keys_props[] =
+{
+    "ro.build.tags",
+    "ro.odm.build.tags",
+    "ro.product.build.tags",
+    "ro.system.build.tags",
+    "ro.system_ext.build.tags",
+    "ro.vendor.build.tags",
+    nullptr};
+
 void witch_nabu()
 {
 
@@ -88,6 +98,12 @@ void witch_nabu()
 
 void vendor_load_properties() {
   witch_nabu();
+
+    /* Spoof Build keys */
+    for (int i = 0; build_keys_props[i]; ++i)
+    {
+        property_override(build_keys_props[i], "release-keys");
+    }
 
 #ifdef __ANDROID_RECOVERY__
   std::string buildtype = ::android::base::GetProperty("ro.build.type", "userdebug");
