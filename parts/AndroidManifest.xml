@@ -34,7 +34,9 @@
         android:persistent="true"
         android:theme="@style/Theme.SubSettingsBase">
 
-        <receiver android:name=".BootCompletedReceiver">
+        <receiver
+            android:name=".BootCompletedReceiver" 
+            android:exported="false">
             <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -42,18 +44,21 @@
         </receiver>
 
         <service android:name=".doze.DozeService"
+                 android:exported="true"
                  android:permission="XiaomiDozeService">
         </service>
 
         <activity
             android:name=".doze.DozeSettingsActivity"
             android:label="@string/ambient_display_title"
+            android:exported="true"
             android:theme="@style/Theme.SubSettingsBase">
         </activity>
 
         <activity
             android:name=".stylus.StylusSettingsActivity"
             android:label="@string/stylus_title"
+            android:exported="false"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -67,6 +72,7 @@
         <activity
             android:name=".keyboard.XiaomiKeyboardSettingsActivity"
             android:label="@string/keyboard_title"
+            android:exported="false"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -80,6 +86,7 @@
         <activity
             android:name=".tap2wake.Tap2WakeSettingsActivity"
             android:label="@string/double_tap_2_wake_title"
+            android:exported="false"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
