@@ -228,6 +228,11 @@ ro.surface_flinger.set_idle_timer_ms=350
 ro.surface_flinger.set_touch_timer_ms=750
 ro.surface_flinger.wcg_composition_dataspace=143261696
 
+# DPM
+persist.vendor.dpm.loglevel=0
+persist.vendor.dpm.nsrm.bkg.evt=3955
+persist.vendor.dpmhalservice.enable=1
+
 # DRM
 drm.service.enabled=true
 
