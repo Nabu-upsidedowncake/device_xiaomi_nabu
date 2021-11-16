@@ -119,6 +119,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     liba2dpoffload \
+    libaudio-resampler \
     libaudiopreprocessing \
     libbatterylistener \
     libbundlewrapper \
