@@ -301,6 +301,7 @@ debug.sf.predict_hwc_composition_strategy=0
 # Media
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
+persist.mm.enable.prefetch=true
 
 # OTG
 persist.sys.oem.otg_support=true
