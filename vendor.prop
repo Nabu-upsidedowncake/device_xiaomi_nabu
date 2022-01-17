@@ -298,6 +298,10 @@ vendor.display.idle_time=0
 vendor.display.idle_time_inactive=0
 debug.sf.predict_hwc_composition_strategy=0
 
+# HWUI
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+
 # Media
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
