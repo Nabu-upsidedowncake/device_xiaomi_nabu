@@ -155,6 +155,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += audioadsprpcd
 PRODUCT_PACKAGES += vendor.qti.audio-adsprpc-service.rc
 
+# Audio Alsa Extensions
+PRODUCT_PACKAGES += \
+   libaudioroute \
+   libaudioroutev2 \
+   libalsautils \
+   libalsautilsv2
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
