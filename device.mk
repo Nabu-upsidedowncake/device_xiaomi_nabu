@@ -200,6 +200,7 @@ PRODUCT_COPY_FILES += \
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
+    custom.hardware.hwcontrol-service \
     XiaomiParts
 
 # Display
