@@ -1,3 +1,6 @@
+# Display
+ro.surface_flinger.has_HDR_display=false
+
 # radio
 ro.radio.noril=true
 
