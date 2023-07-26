@@ -361,3 +361,6 @@ wifi.aware.interface=wifi-aware0
 
 # Zygote
 zygote.critical_window.minute=10
+
+# Recovery
+ro.recovery.ui.blank_unblank_on_init=true
