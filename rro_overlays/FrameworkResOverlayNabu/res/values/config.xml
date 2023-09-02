@@ -584,4 +584,14 @@
     <!-- If this is true, device supports Sustained Performance Mode. -->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
 
+    <!-- ComponentName of the default dream (Settings.Secure.DEFAULT_SCREENSAVER_COMPONENT) -->
+    <string name="config_dreamsDefaultComponent">com.google.assistant.hubui/com.google.assistant.hubui.dream.CuratedPhotoDreamService</string>
+
+    <!-- ComponentNames of the dreams that we should hide -->
+    <string-array name="config_disabledDreamComponents">
+        <item>com.google.android.deskclock/com.android.deskclock.Screensaver</item>
+        <item>com.android.dreams.basic/.Colors</item>
+        <item>com.google.android.apps.photos/.daydream.PhotosDreamService</item>
+        <item>com.android.systemui/com.google.android.systemui.lowlightclock.LowLightClockDreamService</item>
+    </string-array>
 </resources>
