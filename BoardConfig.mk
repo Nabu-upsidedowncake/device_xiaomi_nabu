@@ -105,7 +105,15 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_SOURCE := kernel/xiaomi/nabu
-TARGET_KERNEL_CONFIG := nabu_user_defconfig
+TARGET_KERNEL_CONFIG := nabu_defconfig
+TARGET_KERNEL_CLANG_COMPILE := false
+TARGET_KERNEL_NEW_GCC_COMPILE := true
+KERNEL_TOOLCHAIN_PREFIX_arm64 := aarch64-elf-
+KERNEL_TOOLCHAIN_PREFIX_arm := arm-eabi-
+KERNEL_TOOLCHAIN_arm64 := $(PWD)/prebuilts/gcc/linux-x86/aarch64/aarch64-elf/bin
+KERNEL_TOOLCHAIN_arm := $(PWD)/prebuilts/gcc/linux-x86/aarch64/arm-eabi/bin
+KERNEL_LD := LD=$(PWD)/prebuilts/gcc/linux-x86/aarch64/aarch64-elf/bin/aarch64-elf-ld.lld
+KERNEL_MAKE_FLAGS += LD=ld.lld CC=aarch64-elf-gcc HOSTCXX=aarch64-elf-g++ HOSTCC=gcc
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
