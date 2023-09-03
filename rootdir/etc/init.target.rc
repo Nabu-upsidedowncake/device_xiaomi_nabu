@@ -147,6 +147,9 @@ on early-boot
 # For cpusets initialize for Silver Only first and then Silver + Gold
 # Silver Only configuration cannot work with 0-7
 on boot
+    # Enable suspend to idle mode to reduce latency during suspend/resume
+    write /sys/power/mem_sleep "s2idle"
+
     chown system system /sys/kernel/hbtp/display_pwr
     chown system system /sys/kernel/qvr_external_sensor/fd
     chown system system /sys/class/drm/card0-DSI-1/doze_backlight
@@ -462,6 +465,3 @@ service mi-serial-sh /vendor/bin/init.mi.serial.sh
     oneshot
 on post-fs && property:ro.product.device=nabu
     start mi-serial-sh
-
-    # Enable suspend to RAM
-    write /sys/power/mem_sleep "deep"

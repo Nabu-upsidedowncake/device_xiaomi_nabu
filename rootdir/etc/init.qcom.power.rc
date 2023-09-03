@@ -68,7 +68,7 @@ on init
     write /sys/block/sda/queue/nr_requests 256
 
     # Disable powersaving
-    write /sys/module/lpm_levels/parameters/sleep_disabled 1
+    write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
     # bring back all cores
     write /sys/devices/system/cpu/cpu0/online 1
@@ -79,7 +79,3 @@ on init
     write /sys/devices/system/cpu/cpu5/online 1
     write /sys/devices/system/cpu/cpu6/online 1
     write /sys/devices/system/cpu/cpu7/online 1
-
-    # report max frequency to unity tasks.
-    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so,com.miHoYo.,libunity.so,libfb.so,liblogic.so,libssgamesdkcronet.so,libil2cpp.so,com.activision."
-    write /proc/sys/kernel/sched_lib_mask_force 255
