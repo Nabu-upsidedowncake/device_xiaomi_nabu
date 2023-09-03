@@ -47,16 +47,12 @@ vendor/lib/libssrec.so
 vendor/lib/libsurround_3mic_proc.so
 
 # Audio FX modules
-system_ext/etc/permissions/audiosphere.xml
-system_ext/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libmisoundfx.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libshoebox.so
 
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
@@ -646,9 +642,6 @@ product/etc/appcompat/compat_framework_overrides.xml
 product/etc/permissions/com.google.assistant.hubui.xml
 product/etc/default-permissions/default-permissions_SmartDisplayPrebuilt.xml
 product/priv-app/SmartDisplayPrebuilt/SmartDisplayPrebuilt.apk;PRESIGNED
-
-# IRQ balance
-vendor/bin/msm_irqbalance
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
