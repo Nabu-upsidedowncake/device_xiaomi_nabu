@@ -701,6 +701,64 @@ vendor/etc/media_codecs_vendor_audio.xml
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_vendor.xml
 
+# Perf
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|4627a51573e47a54ebf96ea3623d647588a84277
+vendor/bin/msm_irqbalance|b075c2f4092c175950a2c26d19bf2013e2efd6d5
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
+vendor/lib/libperfconfig.so|510466519cd2e3aaf5a6cc6aefef9f68eeac9e6c
+vendor/lib/libperfgluelayer.so|dd61ea16be569c6a13adb1f6abb7fe54374a0374
+vendor/lib/libperfioctl.so|fcc14060de57a16c15f621679624e9845dda0fdb
+vendor/lib/libqti-perfd-client.so|9ed27413af304b261fc64f4326375d7427866d7d
+vendor/lib/libqti-perfd.so|299ed6f868c011083c1f68d287c0609ece027216
+vendor/lib/libqti-util.so|560bc0793438df2b74b127a31929ed95b2b90a40
+vendor/lib64/libperfconfig.so|06fc5f5cfb6dae18bba45372ff424a97769a60dd
+vendor/lib64/libperfgluelayer.so|5fd74627e6da137083a450e542673d4027d43d57
+vendor/lib64/libperfioctl.so|498c3bea17bfa6f98fb6ba4c279bb151a139415d
+vendor/lib64/libqti-perfd-client.so|62c21bcb8cac644c702fb53e3274ccdb1298c42d
+vendor/lib64/libqti-perfd.so|cd9c5dc9c440101f803e4393e28aad0bffda7284
+vendor/lib64/libqti-util.so|48519e0baba84978b8593576579d33cd78cd0f8f
+
+# Perf Configs
+vendor/etc/perf/commonresourceconfigs.xml|c03bd36054bb5d327ad12dc711b58b3f658d261c
+vendor/etc/perf/perfboostsconfig.xml|93e57b38e327bfbc174e925d639745e66949229b
+vendor/etc/perf/perfconfigstore.xml|62f780c6f974a62d18a66d0dcee30efb04903512
+vendor/etc/perf/targetconfig.xml|95f511bb4030b2755a0b340814fe41cccac994ab
+vendor/etc/perf/targetresourceconfigs.xml|44e33511b57320fade366bfd5be83dcf5930f540
+vendor/etc/powerhint.xml|f35137c8f5068d03bba832b995e3e89b1ad718c2
+
+# QMI
+system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
+vendor/bin/irsc_util|121deb2d6fd21b122c6a8ca8b30ef167f6b90f61
+vendor/bin/pd-mapper|f8e54297f63af0685555722b0327d6b4d24f86bc
+vendor/bin/qrtr-ns|2b84b77bcd50e8c65c2151457f885eb434af4585
+vendor/lib/libdiag.so|94d20d63203eb134bcc4deb484b71dae174414e2
+vendor/lib/libdsutils.so|471aa6d37cff3609cf29bf748496e60018ef96e4
+vendor/lib/libidl.so|f91eebf917150514da6c111de6c66805bed3f6c8
+vendor/lib/libmdmdetect.so|0105abde3eead7e5292d1c0823327f0969751e88
+vendor/lib/libqmi.so|1373b956b34e1e9af7b2773ec2e41e410f3896cf
+vendor/lib/libqmi_cci.so|562adb68874a9089532264f18e1c56b6f489f6ff
+vendor/lib/libqmi_client_helper.so|7577d836dcbc518a2918cc96db9f86ed0756167f
+vendor/lib/libqmi_client_qmux.so|08efbaeb9119d305aacbdfc697d07c192de03abd
+vendor/lib/libqmi_common_so.so|ff25aa6185ebf0700fd5c7d913f383bcd09ea866
+vendor/lib/libqmi_csi.so|73749863f412035d1822f58f177ea27b0810387d
+vendor/lib/libqmi_encdec.so|d8642bf7e8193db310dafad8116222f3b3d9013a
+vendor/lib/libqmiservices.so|a60531847ff655ae54c9e8397d8c5386f00fbca3
+vendor/lib64/libdiag.so|3007e1709a4713b0ab6abd76b10c3a822c436c61
+vendor/lib64/libdsutils.so|9a9260a111c41c1d7107eb6fb48c2402257d473f
+vendor/lib64/libidl.so|857f7a75a51ade7d3621f7fa6da0e9461244ca01
+vendor/lib64/libmdmdetect.so|4dee2a700aad658f3f30a6da069c867307ed371c
+vendor/lib64/libpdmapper.so|67ccdbc6de7c34354745fe5d3e66bb2dee76cc8d
+vendor/lib64/libqmi.so|0899b0d045a5c5801da324e3359dea2654c9dfbe
+vendor/lib64/libqmi_cci.so|4d48845f07742c7084920bf8c5a2cfcf7364daec
+vendor/lib64/libqmi_client_helper.so|b49679c48c9573f0121637c4f1e1e026c2392b8f
+vendor/lib64/libqmi_client_qmux.so|4d74a8417f25617f061160163dca32730608e042
+vendor/lib64/libqmi_common_so.so|d817b576a054dd91e8e4346d73e6d635d221bfde
+vendor/lib64/libqmi_csi.so|7e19c2266b7f63f3f9e69c039b1446acd460231b
+vendor/lib64/libqmi_encdec.so|a18bb21e5b9b53e3dc8dc45f6e7e65e32a467607
+vendor/lib64/libqmiservices.so|d3f7a54cc94a60286dec89caa2dd843da79b51c4
+vendor/lib64/libqrtr.so|3ea4f27b261a1a5ddeee02e9561dc040ddb26514
+vendor/lib64/libqsocket.so|3fa01c9aff6ed96a5ea9886c7696a046c929e339
+
 # Sensors
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
