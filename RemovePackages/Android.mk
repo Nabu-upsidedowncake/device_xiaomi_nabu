@@ -11,7 +11,7 @@ LOCAL_OVERRIDES_PACKAGES := \
    Stk \
    TeleService \
    Telecom \
-   TelephonyProvider \
+   GoogleContacts \
    com.google.android.dialer.support \
    com.android.phone.common \
    DevicePersonalizationPrebuiltPixel2020 \
