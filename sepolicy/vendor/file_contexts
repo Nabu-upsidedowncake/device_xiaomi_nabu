@@ -24,6 +24,9 @@
 # Charger
 /vendor/bin/batterysecret                                               u:object_r:batterysecret_exec:s0
 
+# Data files
+/data/vendor/dolby(/.*)?                                             u:object_r:vendor_data_file:s0
+
 # Display
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/disp_param        u:object_r:vendor_sysfs_graphics:s0
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/dynamic_fps       u:object_r:vendor_sysfs_graphics:s0
@@ -58,6 +61,9 @@
 # This is labeled as public_adsprpcd_file as it needs to be read by apps
 # (e.g. Google Camera App)
 /mnt/vendor/dsp/fastrpc_shell_3                                         u:object_r:public_adsprpcd_file:s0
+
+# HALs
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service   u:object_r:hal_dms_default_exec:s0
 
 # IR
 /dev/ir_spi                                                             u:object_r:lirc_device:s0
