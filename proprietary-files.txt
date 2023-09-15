@@ -26,6 +26,7 @@ system_ext/lib/com.qualcomm.qti.ant@1.0.so
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 
 # Audio
+vendor/bin/cplay
 vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
@@ -747,6 +748,10 @@ vendor/etc/media_profiles_vendor.xml
 
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
+vendor/etc/lm/AdaptLaunchFeature.xml
+vendor/etc/lm/AppClassifierFeature.xml
+vendor/etc/lm/GameOptimizationFeature.xml
+vendor/etc/perf/thermalboost.conf
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/lib/libperfconfig.so
 vendor/lib/libperfgluelayer.so
