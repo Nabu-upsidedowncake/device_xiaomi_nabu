@@ -331,6 +331,9 @@
         <item>"/system_ext/priv-app/daxService/daxService.apk"</item>
     </string-array>
 
+    <!-- Should the pinner service pin the Home application? -->
+    <bool name="config_pinnerHomeApp">true</bool>
+
     <!-- If this is true, long press on power button will be available from the non-interactive state -->
     <bool name="config_supportLongPressPowerWhenNonInteractive">false</bool>
 
