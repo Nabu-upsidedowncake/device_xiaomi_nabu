@@ -73,14 +73,6 @@ case "$target" in
 	echo 1612800 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl
 
-        # setup runtime schedTune
-        echo 1 > /dev/stune/foreground/schedtune.prefer_idle
-        echo 0 > /dev/stune/foreground/schedtune.boost
-        echo 0 > /dev/stune/schedtune.prefer_idle
-        echo 0 > /dev/stune/schedtune.boost
-        echo 1 > /dev/stune/top-app/schedtune.prefer_idle
-        echo 10 > /dev/stune/top-app/schedtune.boost
-
         # Enable oom_reaper
 	if [ -f /sys/module/lowmemorykiller/parameters/oom_reaper ]; then
 		echo 1 > /sys/module/lowmemorykiller/parameters/oom_reaper
