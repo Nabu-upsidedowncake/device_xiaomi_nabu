@@ -1,5 +1,17 @@
 # All unpinned blobs below are extracted from nabu_global-user 12 RKQ1.200826.002 V13.1.3.0.SKXMIXM release-keys
 
+# ACDB
+vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_General_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
+vendor/etc/acdbdata/adsp_avs_config.acdb
+
 # ACDB loader
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
@@ -20,52 +32,6 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/libloadalgo_stub.so
 vendor/lib64/libssc_default_listener.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
-
-# ANT+
-system_ext/lib/com.qualcomm.qti.ant@1.0.so
-system_ext/lib64/com.qualcomm.qti.ant@1.0.so
-
-# Audio
-vendor/bin/cplay
-vendor/lib/libadiertac.so
-vendor/lib/libadm.so
-vendor/lib/libaudcal.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libaudioconfigstore.so
-vendor/lib/libaudioparsers.so
-vendor/lib/libaudioroute_ext.so
-vendor/lib/libbatterylistener.so
-vendor/lib/libcomprcapture.so
-vendor/lib/libdrc.so
-vendor/lib/libexthwplugin.so
-vendor/lib/libhdmiedid.so
-vendor/lib/libhdmipassthru.so
-vendor/lib/libhfp.so
-vendor/lib/libqtigef.so
-vendor/lib/libsndmonitor.so
-vendor/lib/libspkrprot.so
-vendor/lib/libssrec.so
-vendor/lib/libsurround_3mic_proc.so
-
-# Audio FX modules
-vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libmisoundfx.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
-vendor/lib/soundfx/libshoebox.so
-
-# ACDB
-vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_General_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
-vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ADSP modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so
@@ -101,15 +67,31 @@ vendor/lib/rfsa/adsp/tas25xx_TI_0.bin
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
-# Audio hardware
-vendor/lib/hw/audio.primary.msmnile.so
-vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
-vendor/lib/vndk/libxlog.so
-vendor/lib/liba2dpoffload.so
+# ANT+
+system_ext/lib/com.qualcomm.qti.ant@1.0.so
+system_ext/lib64/com.qualcomm.qti.ant@1.0.so
+
+# Audio
+vendor/bin/cplay
+vendor/lib/libadiertac.so
+vendor/lib/libadm.so
+vendor/lib/libaudcal.so
 vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudioconfigstore.so
+vendor/lib/libaudioparsers.so
 vendor/lib/libaudioroute_ext.so
-vendor/lib/libresampler.so
-vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
+vendor/lib/libbatterylistener.so
+vendor/lib/libcomprcapture.so
+vendor/lib/libdrc.so
+vendor/lib/libexthwplugin.so
+vendor/lib/libhdmiedid.so
+vendor/lib/libhdmipassthru.so
+vendor/lib/libhfp.so
+vendor/lib/libqtigef.so
+vendor/lib/libsndmonitor.so
+vendor/lib/libspkrprot.so
+vendor/lib/libssrec.so
+vendor/lib/libsurround_3mic_proc.so
 
 # Audio firmware
 vendor/firmware/BL-cs35l41-dsp1-spk-cali.bin
@@ -136,58 +118,51 @@ vendor/firmware/cs35l41-dsp1-spk-cali.wmfw
 vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
 vendor/firmware/tas256x_reg.bin
 
+# Audio FX modules
+vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libmisoundfx.so
+vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcreverb.so
+vendor/lib/soundfx/libqcvirt.so
+vendor/lib/soundfx/libshoebox.so
+
+# Audio hardware
+vendor/lib/hw/audio.primary.msmnile.so
+vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
+vendor/lib/liba2dpoffload.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudioroute_ext.so
+vendor/lib/libresampler.so
+vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
+vendor/lib/vndk/libxlog.so
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/libbtnv.so
+vendor/lib/btaudio_offload_if.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib/btaudio_offload_if.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
+vendor/lib/vendor.qti.hardware.fm@1.0.so
+vendor/lib64/btaudio_offload_if.so
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/btaudio_offload_if.so
+vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbt-hidlclient.so
+vendor/lib64/libbtnv.so
 vendor/lib64/libsoc_helper.so
 vendor/lib64/libsoc_helper_jni.so
-vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
-
-# Charger
-vendor/bin/batterysecret
-vendor/etc/init/init.batterysecret.rc
-
-# CDSP
-vendor/bin/cdsprpcd
-vendor/etc/init/vendor.qti.cdsprpc-service.rc
-vendor/lib/libcdsp_default_listener.so
-vendor/lib/libcdsprpc.so
-vendor/lib/libfastcrc.so
-vendor/lib/libmdsprpc.so
-vendor/lib/libsdsprpc.so
-vendor/lib/libsysmon_cdsp_skel.so
-vendor/lib64/libcdfw.so
-vendor/lib64/libcdfw_remote_api.so
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libmdsprpc.so
-vendor/lib64/libsdsprpc.so
-vendor/lib64/libsysmon_cdsp_skel.so
-
-# Charger
-vendor/bin/hvdcp_opti
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
 # Camera
 vendor/etc/camera/megviifacepp_0_5_2_model
@@ -279,8 +254,16 @@ vendor/lib64/libarcsoft_portrait_lighting_c.so
 vendor/lib64/libarcsoft_preview_deflicker.so
 vendor/lib64/libarcsoft_supernight.so
 
+# Camera (camx)
+vendor/lib64/libcamxfdalgov7.so
+vendor/lib64/libcamxfdalgov8.so
+vendor/lib64/libcamxfdengine.so
+vendor/lib64/libcamxlocalhistogramalgo.so
+vendor/lib64/libcamxstatscore.so
+vendor/lib64/libcamxswprocessalgo.so
+vendor/lib64/libcamxtintlessalgo.so
+
 # Camera (components)
-vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 vendor/lib64/camera/components/com.ailab.node.videofilter.so
 vendor/lib64/camera/components/com.almalence.node.sr.so
 vendor/lib64/camera/components/com.altek.node.depurple.so
@@ -343,16 +326,8 @@ vendor/lib64/camera/components/com.xiaomi.node.mibokeh.so
 vendor/lib64/camera/components/com.xiaomi.node.mifragment.so
 vendor/lib64/camera/components/com.xiaomi.node.mimovie3rd.so
 vendor/lib64/camera/components/com.xiaomi.node.misegment.so
+vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 vendor/lib64/camera/components/libdepthmapwrapper.so
-
-# Camera (camx)
-vendor/lib64/libcamxfdalgov7.so
-vendor/lib64/libcamxfdalgov8.so
-vendor/lib64/libcamxfdengine.so
-vendor/lib64/libcamxlocalhistogramalgo.so
-vendor/lib64/libcamxstatscore.so
-vendor/lib64/libcamxswprocessalgo.so
-vendor/lib64/libcamxtintlessalgo.so
 
 # Camera (Configs)
 vendor/etc/camera/104_Meet.png
@@ -402,9 +377,40 @@ vendor/etc/camera/vidhance_calibration
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
 
+# CDSP
+vendor/bin/cdsprpcd
+vendor/etc/init/vendor.qti.cdsprpc-service.rc
+vendor/lib/libcdsp_default_listener.so
+vendor/lib/libcdsprpc.so
+vendor/lib/libfastcrc.so
+vendor/lib/libmdsprpc.so
+vendor/lib/libsdsprpc.so
+vendor/lib/libsysmon_cdsp_skel.so
+vendor/lib64/libcdfw.so
+vendor/lib64/libcdfw_remote_api.so
+vendor/lib64/libcdsp_default_listener.so
+vendor/lib64/libcdsprpc.so
+vendor/lib64/libmdsprpc.so
+vendor/lib64/libsdsprpc.so
+vendor/lib64/libsysmon_cdsp_skel.so
+
+# Charger
+vendor/bin/batterysecret
+vendor/bin/hvdcp_opti
+vendor/etc/init/init.batterysecret.rc
+vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
+
+# Charger
+vendor/bin/batterysecret
+vendor/bin/hvdcp_opti
+vendor/etc/init/init.batterysecret.rc
+vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
+
 # CNE
 -vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
+vendor/etc/cne/profileSlm.xml
+vendor/etc/cne/slm.conf
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml
@@ -432,8 +438,6 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
-vendor/etc/cne/profileSlm.xml
-vendor/etc/cne/slm.conf
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/lib64/libcne.so
@@ -464,34 +468,16 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
-# Graphics (HDR) - from marble.
-vendor/lib64/libhdr_tm.so|7954c5cd5c0b23fe8d0609361c22d24c59f1448b
-
-# Display (SDM)
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libqseed3.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libtinyxml2_1.so
-
-# Display (SDM)
-vendor/etc/hbtp/hbtpcfg_sdm855_801s_4k.dat
-vendor/etc/hbtp/loader.cfg
-vendor/etc/hbtp/qtc801s.bin
-vendor/etc/dsi_k82_36_02_0b_dual_cphy_vid_display_mi.xml
-vendor/etc/dsi_k82_42_02_0a_dual_cphy_vid_display_mi.xml
-vendor/etc/qdcm_calib_data_xiaomi_36_02_0b_video_mode_dual_dsi_cphy_panel.xml
-vendor/etc/qdcm_calib_data_xiaomi_42_02_0a_video_mode_dual_dsi_cphy_panel.xml
-
-# Display (SDM) - from LA.UM.9.1.r1-10900-SMxxx0.0
-vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
+# Device Features
+product/etc/device_features/nabu.xml
 
 # Display calibration data
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
+
+# Display Feature
+system/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
+system/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
@@ -505,6 +491,43 @@ vendor/lib64/vendor.display.color@1.3.so
 vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
+
+# Display (SDM)
+vendor/etc/dsi_k82_36_02_0b_dual_cphy_vid_display_mi.xml
+vendor/etc/dsi_k82_42_02_0a_dual_cphy_vid_display_mi.xml
+vendor/etc/hbtp/hbtpcfg_sdm855_801s_4k.dat
+vendor/etc/hbtp/loader.cfg
+vendor/etc/hbtp/qtc801s.bin
+vendor/etc/qdcm_calib_data_xiaomi_36_02_0b_video_mode_dual_dsi_cphy_panel.xml
+vendor/etc/qdcm_calib_data_xiaomi_42_02_0a_video_mode_dual_dsi_cphy_panel.xml
+vendor/lib64/libdisplayqos.so
+vendor/lib64/libqseed3.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-colormgr-algo.so
+vendor/lib64/libsdm-diag.so
+vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libtinyxml2_1.so
+
+# Display (SDM)
+vendor/etc/dsi_k82_36_02_0b_dual_cphy_vid_display_mi.xml
+vendor/etc/dsi_k82_42_02_0a_dual_cphy_vid_display_mi.xml
+vendor/etc/hbtp/hbtpcfg_sdm855_801s_4k.dat
+vendor/etc/hbtp/loader.cfg
+vendor/etc/hbtp/qtc801s.bin
+vendor/etc/qdcm_calib_data_xiaomi_36_02_0b_video_mode_dual_dsi_cphy_panel.xml
+vendor/etc/qdcm_calib_data_xiaomi_42_02_0a_video_mode_dual_dsi_cphy_panel.xml
+vendor/lib64/libdisplayqos.so
+vendor/lib64/libqseed3.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-colormgr-algo.so
+vendor/lib64/libsdm-diag.so
+vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libtinyxml2_1.so
+
+# Display (SDM) - from LA.UM.9.1.r1-10900-SMxxx0.0
+vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
 
 # Dolby - from rhode
 odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service|da39a3ee5e6b4b0d3255bfef95601890afd80709
@@ -532,35 +555,29 @@ system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk|25deb5
 system_ext/priv-app/daxService/daxService.apk|239f110bc4578c789491a5174998cc87c0a5b7ad
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|8215768638794162db3bb76e43045926fcbb4b0b
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
-vendor/lib/soundfx/libswdap.so|810d0e266e4a77f06cba72fe8bdde2e1ede4f9f9
-vendor/lib/soundfx/libswgamedap.so|c7d35eb932ecffb384ec62628404df3406b63919
-vendor/lib/soundfx/libswvqe.so|3009202dcdd5b8fadb9c43a8cf5f0fe1c28311a6
 vendor/lib/libdapparamstorage.so|ce5f2fadc1e7d3811d73d49f64254b7054a57259
 vendor/lib/libdeccfg.so|050de5edb5fb7dabba9b59bfafcb5a1366285d3c
 vendor/lib/libstagefright_soft_ac4dec.so|c0fdd6101abf5dbc162c6eee815db40131b94d6c
 vendor/lib/libstagefright_soft_ddpdec.so|9718a2040fba0ad28bd7f55caa849bd9b983f6ca
 vendor/lib/libstagefrightdolby.so|7dcbe2a14024579b2cd657d266ce3ad35faeeed6
+vendor/lib/soundfx/libswdap.so|810d0e266e4a77f06cba72fe8bdde2e1ede4f9f9
+vendor/lib/soundfx/libswgamedap.so|c7d35eb932ecffb384ec62628404df3406b63919
+vendor/lib/soundfx/libswvqe.so|3009202dcdd5b8fadb9c43a8cf5f0fe1c28311a6
 vendor/lib/vendor.dolby.hardware.dms@2.0.so|aaf98796bfa8b384e2b5e162214ca46f6eca5dbc
-vendor/lib64/soundfx/libswdap.so|e996ee1d421b3b2cf74f3f3ed93bff067d83dddb
-vendor/lib64/soundfx/libswgamedap.so|c898fd5b51312c5fafa693ca037423c5bae23101
-vendor/lib64/soundfx/libswvqe.so|08394e1ac285479213604c35cb144147fdac68c0
 vendor/lib64/libdapparamstorage.so|7549aeba2b7041b472ffc1f5fd39a56e4be64a2b
 vendor/lib64/libdeccfg.so|3a63582be7dea50ae10c0543f68e3bce592a3877
 vendor/lib64/libdlbdsservice.so|ccae69075705a71358e363eee973f32d76288696
 vendor/lib64/libstagefright_soft_ac4dec.so|45b4a08175e6b5226b34e7275ce60d4b76033041
 vendor/lib64/libstagefright_soft_ddpdec.so|7f1ee1710cdb5d4334613a765e04bec5d807fea2
 vendor/lib64/libstagefrightdolby.so|884abf462a46d0e0281c8157418c513cd4dc003a
+vendor/lib64/soundfx/libswdap.so|e996ee1d421b3b2cf74f3f3ed93bff067d83dddb
+vendor/lib64/soundfx/libswgamedap.so|c898fd5b51312c5fafa693ca037423c5bae23101
+vendor/lib64/soundfx/libswvqe.so|08394e1ac285479213604c35cb144147fdac68c0
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|92eb0a2b730810881288119fc4d038f52870acd1
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so|a93b5cf33ae57387a2d32686520a0d1dd5d10dcc
 
-# Display Feature
-system/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
-system/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
-
-# Device Features
-product/etc/device_features/nabu.xml
-
 # DPM
+-system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 framework/tcmclient.jar
 system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
@@ -575,7 +592,6 @@ system_ext/lib64/libdpmfdmgr.so
 system_ext/lib64/libdpmframework.so
 system_ext/lib64/libdpmtcm.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
--system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
@@ -584,9 +600,9 @@ vendor/lib64/libdpmqmihal.so
 # DRM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/qseecomd
+vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/qseecomd.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
-vendor/etc/gpfspath_oem_config.xml
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
@@ -610,6 +626,21 @@ vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+
+# GNSS
+vendor/lib64/libminksocket.so
+
+# Graphics (Adreno firmware)
+vendor/firmware/a612_rgmu.bin
+vendor/firmware/a618_gmu.bin
+vendor/firmware/a630_gmu.bin
+vendor/firmware/a630_sqe.fw
+vendor/firmware/a640_gmu.bin
+vendor/firmware/a640_zap.b00
+vendor/firmware/a640_zap.b01
+vendor/firmware/a640_zap.b02
+vendor/firmware/a640_zap.elf
+vendor/firmware/a640_zap.mdt
 
 # Graphics (Adreno) - from ChinaDev(?)
 vendor/gpu/kbc/sequence_manifest.bin|cc050a8058904871b3cfabec74521d42f0a61a1f
@@ -655,21 +686,24 @@ vendor/lib64/libkernelmanager.so|6e34cfed1b61ef27ac3740cf477e1ed836695513
 vendor/lib64/libllvm-glnext.so|de75e9c020c8a0b07cf7873d72cd3ec3223b74ef
 vendor/lib64/libllvm-qcom.so|cc4be65b93128742f5ee9bec9cbf4ad65a88fa1d
 
+# Graphics (HDR) - from marble.
+vendor/lib64/libhdr_tm.so|7954c5cd5c0b23fe8d0609361c22d24c59f1448b
+
 # Graphics (Vulkan) - from ChinaDev(?)
 vendor/lib/hw/vulkan.adreno.so|d59d50dcad5e3113fca1c95ab73dfcd265c23c66
 vendor/lib64/hw/vulkan.adreno.so|0388f3fd852c1fb1d90230c48b6abe3058897be8
 
-# Graphics (Adreno firmware)
-vendor/firmware/a612_rgmu.bin
-vendor/firmware/a618_gmu.bin
-vendor/firmware/a630_gmu.bin
-vendor/firmware/a630_sqe.fw
-vendor/firmware/a640_gmu.bin
-vendor/firmware/a640_zap.b00
-vendor/firmware/a640_zap.b01
-vendor/firmware/a640_zap.b02
-vendor/firmware/a640_zap.elf
-vendor/firmware/a640_zap.mdt
+# HotwordEnrollment
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
+# HubUI - from Google Pixel Tablet (TQ3A.230805.001.B1)
+product/etc/appcompat/compat_framework_overrides.xml|3170cd414d4d6d3a4a9ad518c5f9137afb3da453
+product/etc/default-permissions/default-permissions_SmartDisplayPrebuilt.xml|06ee4107873e17454ea0fb34f8ebb2fbf1fe6f40
+product/etc/permissions/com.google.assistant.hubui.xml|954bd557c143ce8840386e849102aca834386ceb
+product/priv-app/SmartDisplayPrebuilt/SmartDisplayPrebuilt.apk;PRESIGNED|4a768228115d97e6b23c7927619bf1b959c74b96
 
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
@@ -685,21 +719,6 @@ vendor/firmware/ipa_uc.b01
 vendor/firmware/ipa_uc.b02
 vendor/firmware/ipa_uc.elf
 vendor/firmware/ipa_uc.mdt
-
-# GNSS
-vendor/lib64/libminksocket.so
-
-# HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
-
-# HubUI - from Google Pixel Tablet (TQ3A.230805.001.B1)
-product/etc/appcompat/compat_framework_overrides.xml|3170cd414d4d6d3a4a9ad518c5f9137afb3da453
-product/etc/permissions/com.google.assistant.hubui.xml|954bd557c143ce8840386e849102aca834386ceb
-product/etc/default-permissions/default-permissions_SmartDisplayPrebuilt.xml|06ee4107873e17454ea0fb34f8ebb2fbf1fe6f40
-product/priv-app/SmartDisplayPrebuilt/SmartDisplayPrebuilt.apk;PRESIGNED|4a768228115d97e6b23c7927619bf1b959c74b96
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
@@ -735,16 +754,6 @@ vendor/lib/libqcodec2.so
 vendor/lib64/libmmosal.so
 vendor/lib64/libqcodec2.so
 
-# Media (sf-HW)
-vendor/lib/libarbitrarybytes.so
-vendor/lib64/libarbitrarybytes.so
-vendor/lib/libOmxSwVdec.so
-vendor/lib64/libOmxSwVdec.so
-vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib64/libOmxSwVencMpeg4.so
-vendor/lib/libstagefrighthw.so
-vendor/lib64/libstagefrighthw.so
-
 # Media configs
 odm/etc/media_profiles_V1_0.xml
 vendor/etc/media_codecs.xml
@@ -755,133 +764,21 @@ vendor/etc/media_codecs_vendor_audio.xml
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_vendor.xml
 
-# Perf
-system_ext/etc/perf/wlc_model.tflite
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
-vendor/etc/lm/AdaptLaunchFeature.xml
-vendor/etc/lm/AppClassifierFeature.xml
-vendor/etc/lm/GameOptimizationFeature.xml
-vendor/etc/perf/thermalboost.conf
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libperfioctl.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libperfioctl.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
-
-# Perf Configs
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/powerhint.xml
-
-# Perf IOP
-system_ext/lib/vendor.qti.hardware.iop@2.0.so
-system_ext/lib64/vendor.qti.hardware.iop@2.0.so
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
-vendor/lib/libqti-iopd-client.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
-
-# Sensors
-vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
-vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
-vendor/bin/init.qcom.sensors.sh
-vendor/bin/sensors.qti
-vendor/bin/sscrpcd
-vendor/etc/init/init.vendor.sensors.rc
-vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
-vendor/etc/init/vendor.sensors.qti.rc
-vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
-vendor/etc/sensors/hals.conf
-vendor/etc/sensors/sns_reg_config
-vendor/etc/sec_config
-vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
-vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
-vendor/lib64/libnanopb.so
-vendor/lib64/libsensorcal.so
-vendor/lib64/libsensorslog.so
-vendor/lib64/libsns_device_mode_stub.so
-vendor/lib64/libsns_fastRPC_util.so
-vendor/lib64/libsns_low_lat_stream_stub.so
-vendor/lib64/libsns_registry_skel.so
-vendor/lib64/libsnsapi.so
-vendor/lib64/libsnsdiaglog.so
-vendor/lib64/libssc.so
-vendor/lib64/libssc_default_listener.so
-vendor/lib64/libssccalapi.so
-vendor/lib64/libultrasound.so
-vendor/lib64/sensors.mius.proximity.so
-vendor/lib64/sensors.ssc.so
-vendor/lib64/sensors.touch.so
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
-
-# Sensors Config
-vendor/etc/sensors/config/adux1050_0.json
-vendor/etc/sensors/config/ak991x_dri_0.json
-vendor/etc/sensors/config/bu27030_0_back.json
-vendor/etc/sensors/config/lsm6dso_0.json
-vendor/etc/sensors/config/shtw2_0.json
-vendor/etc/sensors/config/sm8150_adux1050_0.json
-vendor/etc/sensors/config/sm8150_ak991x_0.json
-vendor/etc/sensors/config/sm8150_bu27030_0_back.json
-vendor/etc/sensors/config/sm8150_lsm6dso_0.json
-vendor/etc/sensors/config/sm8150_power_0.json
-vendor/etc/sensors/config/sm8150_tcs3701.json
-vendor/etc/sensors/config/sns_amd.json
-vendor/etc/sensors/config/sns_amd_sw_disabled.json
-vendor/etc/sensors/config/sns_amd_sw_enabled.json
-vendor/etc/sensors/config/sns_aod.json
-vendor/etc/sensors/config/sns_basic_gestures.json
-vendor/etc/sensors/config/sns_bring_to_ear.json
-vendor/etc/sensors/config/sns_ccd.json
-vendor/etc/sensors/config/sns_cm.json
-vendor/etc/sensors/config/sns_dae.json
-vendor/etc/sensors/config/sns_device_orient.json
-vendor/etc/sensors/config/sns_diag_filter.json
-vendor/etc/sensors/config/sns_distance_bound.json
-vendor/etc/sensors/config/sns_dpc.json
-vendor/etc/sensors/config/sns_facing.json
-vendor/etc/sensors/config/sns_fmv.json
-vendor/etc/sensors/config/sns_geomag_rv.json
-vendor/etc/sensors/config/sns_gyro_cal.json
-vendor/etc/sensors/config/sns_mag_cal.json
-vendor/etc/sensors/config/sns_multishake.json
-vendor/etc/sensors/config/sns_nonui.json
-vendor/etc/sensors/config/sns_oem13.json
-vendor/etc/sensors/config/sns_pedometer.json
-vendor/etc/sensors/config/sns_rmd.json
-vendor/etc/sensors/config/sns_rotv.json
-vendor/etc/sensors/config/sns_sar_algo_1.json
-vendor/etc/sensors/config/sns_smd.json
-vendor/etc/sensors/config/sns_tilt.json
-vendor/etc/sensors/config/sns_tilt_sw_disabled.json
-vendor/etc/sensors/config/sns_tilt_sw_enabled.json
-vendor/etc/sensors/config/sns_tilt_to_wake.json
-vendor/etc/sensors/config/tcs3701.json
-vendor/etc/sensors/judge_calibrated.json
+# Media (sf-HW)
+vendor/lib/libOmxSwVdec.so
+vendor/lib/libOmxSwVencMpeg4.so
+vendor/lib/libarbitrarybytes.so
+vendor/lib/libstagefrighthw.so
+vendor/lib64/libOmxSwVdec.so
+vendor/lib64/libOmxSwVencMpeg4.so
+vendor/lib64/libarbitrarybytes.so
+vendor/lib64/libstagefrighthw.so
 
 # Neural networks
-vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
-vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
+vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
+vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
 vendor/lib64/libhexagon_nn_stub.so
 vendor/lib64/libhta.so
 vendor/lib64/libhta_hexagon_runtime.so
@@ -932,6 +829,47 @@ vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libswvdec.so
+
+# Perf
+system_ext/etc/perf/wlc_model.tflite
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
+vendor/etc/lm/AdaptLaunchFeature.xml
+vendor/etc/lm/AppClassifierFeature.xml
+vendor/etc/lm/GameOptimizationFeature.xml
+vendor/etc/perf/thermalboost.conf
+vendor/lib/libperfconfig.so
+vendor/lib/libperfgluelayer.so
+vendor/lib/libperfioctl.so
+vendor/lib/libqti-perfd-client.so
+vendor/lib/libqti-perfd.so
+vendor/lib/libqti-util.so
+vendor/lib64/libperfconfig.so
+vendor/lib64/libperfgluelayer.so
+vendor/lib64/libperfioctl.so
+vendor/lib64/libqti-perfd-client.so
+vendor/lib64/libqti-perfd.so
+vendor/lib64/libqti-util.so
+
+# Perf Configs
+vendor/etc/perf/commonresourceconfigs.xml
+vendor/etc/perf/perfboostsconfig.xml
+vendor/etc/perf/perfconfigstore.xml
+vendor/etc/perf/targetconfig.xml
+vendor/etc/perf/targetresourceconfigs.xml
+vendor/etc/powerhint.xml
+
+# Perf IOP
+system_ext/lib/vendor.qti.hardware.iop@2.0.so
+system_ext/lib64/vendor.qti.hardware.iop@2.0.so
+vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
+vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
+vendor/lib/libqti-iopd-client.so
+vendor/lib/vendor.qti.hardware.iop@1.0.so
+vendor/lib/vendor.qti.hardware.iop@2.0.so
+vendor/lib64/libqti-iopd-client.so
+vendor/lib64/vendor.qti.hardware.iop@1.0.so
+vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
@@ -1020,9 +958,91 @@ vendor/lib64/libqsocket.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 
+# Sensors
+vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
+vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
+vendor/bin/init.qcom.sensors.sh
+vendor/bin/sensors.qti
+vendor/bin/sscrpcd
+vendor/etc/init/init.vendor.sensors.rc
+vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
+vendor/etc/init/vendor.sensors.qti.rc
+vendor/etc/init/vendor.sensors.sscrpcd.rc
+vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
+vendor/etc/sec_config
+vendor/etc/sensors/hals.conf
+vendor/etc/sensors/sns_reg_config
+vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
+vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
+vendor/lib64/libnanopb.so
+vendor/lib64/libsensorcal.so
+vendor/lib64/libsensorslog.so
+vendor/lib64/libsns_device_mode_stub.so
+vendor/lib64/libsns_fastRPC_util.so
+vendor/lib64/libsns_low_lat_stream_stub.so
+vendor/lib64/libsns_registry_skel.so
+vendor/lib64/libsnsapi.so
+vendor/lib64/libsnsdiaglog.so
+vendor/lib64/libssc.so
+vendor/lib64/libssc_default_listener.so
+vendor/lib64/libssccalapi.so
+vendor/lib64/libultrasound.so
+vendor/lib64/sensors.mius.proximity.so
+vendor/lib64/sensors.ssc.so
+vendor/lib64/sensors.touch.so
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
+
+# Sensors Config
+vendor/etc/sensors/config/adux1050_0.json
+vendor/etc/sensors/config/ak991x_dri_0.json
+vendor/etc/sensors/config/bu27030_0_back.json
+vendor/etc/sensors/config/lsm6dso_0.json
+vendor/etc/sensors/config/shtw2_0.json
+vendor/etc/sensors/config/sm8150_adux1050_0.json
+vendor/etc/sensors/config/sm8150_ak991x_0.json
+vendor/etc/sensors/config/sm8150_bu27030_0_back.json
+vendor/etc/sensors/config/sm8150_lsm6dso_0.json
+vendor/etc/sensors/config/sm8150_power_0.json
+vendor/etc/sensors/config/sm8150_tcs3701.json
+vendor/etc/sensors/config/sns_amd.json
+vendor/etc/sensors/config/sns_amd_sw_disabled.json
+vendor/etc/sensors/config/sns_amd_sw_enabled.json
+vendor/etc/sensors/config/sns_aod.json
+vendor/etc/sensors/config/sns_basic_gestures.json
+vendor/etc/sensors/config/sns_bring_to_ear.json
+vendor/etc/sensors/config/sns_ccd.json
+vendor/etc/sensors/config/sns_cm.json
+vendor/etc/sensors/config/sns_dae.json
+vendor/etc/sensors/config/sns_device_orient.json
+vendor/etc/sensors/config/sns_diag_filter.json
+vendor/etc/sensors/config/sns_distance_bound.json
+vendor/etc/sensors/config/sns_dpc.json
+vendor/etc/sensors/config/sns_facing.json
+vendor/etc/sensors/config/sns_fmv.json
+vendor/etc/sensors/config/sns_geomag_rv.json
+vendor/etc/sensors/config/sns_gyro_cal.json
+vendor/etc/sensors/config/sns_mag_cal.json
+vendor/etc/sensors/config/sns_multishake.json
+vendor/etc/sensors/config/sns_nonui.json
+vendor/etc/sensors/config/sns_oem13.json
+vendor/etc/sensors/config/sns_pedometer.json
+vendor/etc/sensors/config/sns_rmd.json
+vendor/etc/sensors/config/sns_rotv.json
+vendor/etc/sensors/config/sns_sar_algo_1.json
+vendor/etc/sensors/config/sns_smd.json
+vendor/etc/sensors/config/sns_tilt.json
+vendor/etc/sensors/config/sns_tilt_sw_disabled.json
+vendor/etc/sensors/config/sns_tilt_sw_enabled.json
+vendor/etc/sensors/config/sns_tilt_to_wake.json
+vendor/etc/sensors/config/tcs3701.json
+vendor/etc/sensors/judge_calibrated.json
+
 # Snapdragon Computer Vision Engine
-vendor/lib/libfastcvdsp_stub.so
 -vendor/lib/libfastcvopt.so
+-vendor/lib64/libfastcvopt.so
+vendor/lib/libfastcvdsp_stub.so
 vendor/lib/libscveCommon.so
 vendor/lib/libscveCommon_stub.so
 vendor/lib/libscveObjectSegmentation.so
@@ -1030,7 +1050,6 @@ vendor/lib/libscveObjectSegmentation_stub.so
 vendor/lib/libscveObjectTracker.so
 vendor/lib/libscveObjectTracker_stub.so
 vendor/lib64/libfastcvdsp_stub.so
--vendor/lib64/libfastcvopt.so
 vendor/lib64/libscveCommon.so
 vendor/lib64/libscveCommon_stub.so
 vendor/lib64/libscveObjectSegmentation.so
@@ -1049,6 +1068,8 @@ vendor/bin/mi_thermald
 vendor/etc/init/init.mi_thermald.rc
 
 # Thermal engine
+-vendor/lib/libthermalclient.so
+-vendor/lib64/libthermalclient.so
 vendor/bin/thermal-engine
 vendor/etc/thermal-4k.conf
 vendor/etc/thermal-camera.conf
@@ -1063,8 +1084,6 @@ vendor/etc/thermal-normal.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-video.conf
 vendor/etc/thermald-devices.conf
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
 
 # Thermal Service Client
 system_ext/lib/libthermalclient.qti.so
@@ -1114,17 +1133,17 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 
 # Widevine DRM
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib/libcppf.so
-vendor/lib64/mediadrm/libwvdrmengine.so
-vendor/lib64/librmp.so
-vendor/lib64/liboemcrypto.so
 vendor/lib64/libbase64.so
+vendor/lib64/liboemcrypto.so
+vendor/lib64/librmp.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/libwvkeybox.so
+vendor/lib64/mediadrm/libwvdrmengine.so
 
 # WiFi
 vendor/bin/cnss-daemon
@@ -1133,6 +1152,7 @@ vendor/etc/wifi/aoa_cldb_swl14.bin
 
 # WiFi Display
 -framework/WfdCommon.jar
+-system_ext/priv-app/WfdService/WfdService.apk
 system_ext/bin/wfdservice
 system_ext/bin/wfdservice64
 system_ext/etc/init/wfdservice.rc
@@ -1179,7 +1199,6 @@ system_ext/lib64/libwfduibcsinkinterface.so
 system_ext/lib64/libwfduibcsrc.so
 system_ext/lib64/libwfduibcsrcinterface.so
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
--system_ext/priv-app/WfdService/WfdService.apk
 vendor/bin/wifidisplayhalservice
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/etc/seccomp_policy/wfdhdcphalservice.policy
