@@ -413,6 +413,11 @@ PRODUCT_PACKAGES += \
     SettingsOverlayNabu \
     FrameworkResOverlayNabu
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
+    libprotobuf-cpp-full-3.9.1-vendorcompat
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
