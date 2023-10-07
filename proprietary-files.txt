@@ -646,12 +646,6 @@ vendor/lib64/libhdr_tm.so|7954c5cd5c0b23fe8d0609361c22d24c59f1448b
 vendor/lib/hw/vulkan.adreno.so|d59d50dcad5e3113fca1c95ab73dfcd265c23c66
 vendor/lib64/hw/vulkan.adreno.so|0388f3fd852c1fb1d90230c48b6abe3058897be8
 
-# HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
-
 # HubUI - from Google Pixel Tablet (TQ3A.230805.001.B1)
 product/etc/appcompat/compat_framework_overrides.xml|3170cd414d4d6d3a4a9ad518c5f9137afb3da453
 product/etc/default-permissions/default-permissions_SmartDisplayPrebuilt.xml|06ee4107873e17454ea0fb34f8ebb2fbf1fe6f40
