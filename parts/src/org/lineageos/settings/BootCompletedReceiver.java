@@ -39,7 +39,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         // DiracUtils.initialize(context);
 
         // Dolby Atmos
-        DolbyUtils.getInstance(context).onBootCompleted();
+        DolbyUtils.getInstance(context);
 
         PeripheralUtils.BootResetState(context);
         ThermalUtils.startService(context);
