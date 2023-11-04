@@ -14,7 +14,6 @@ LOCAL_OVERRIDES_PACKAGES := \
    GoogleContacts \
    com.google.android.dialer.support \
    com.android.phone.common \
-   DevicePersonalizationPrebuiltPixel2020 \
    messaging
 
 LOCAL_UNINSTALLABLE_MODULE := true
