@@ -238,20 +238,6 @@ persist.vendor.dpm.loglevel=0
 persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
 
-# Dexopt
-dalvik.vm.dex2oat64.enabled=true
-pm.dexopt.first-boot=quicken
-pm.dexopt.bg-dexopt=everything
-pm.dexopt.boot=verify
-pm.dexopt.install=speed-profile
-dalvik.vm.image-dex2oat-filter=speed
-dalvik.vm.image-dex2oat-threads=8
-dalvik.vm.dex2oat-filter=speed
-dalvik.vm.dex2oat-threads=8
-dalvik.vm.dex2oat64.enabled=true
-dalvik.vm.minidebuginfo=false
-dalvik.vm.dex2oat-minidebuginfo=false
-
 # DRM
 drm.service.enabled=true
 
@@ -304,9 +290,6 @@ persist.mm.enable.prefetch=true
 
 # OTG
 persist.sys.oem.otg_support=true
-
-# PASR
-vendor.power.pasr.enabled=false
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
