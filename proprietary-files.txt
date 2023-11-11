@@ -917,9 +917,6 @@ vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|856995253f2940eb7c7bf9c57d44b8a
 vendor/lib64/vendor.qti.qspmhal@1.0.so|b24925548b969a7745955bbd48069207aa5889fc
 vendor/lib64/vendor.qti.qspmhal@1.0-impl.so|171884a6d4751c4307e558c0a3ffccdab3c0c23f
 
-# Perf Configs
-vendor/etc/powerhint.xml
-
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service

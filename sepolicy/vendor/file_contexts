@@ -85,7 +85,7 @@
 /sys/devices/platform/soc/soc:xiaomi_keyboard/xiaomi_keyboard_conn_status       u:object_r:vendor_sysfs_keyboard:s0
 
 # Power
-/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service-nabu               u:object_r:hal_power_default_exec:s0
+/vendor/bin/hw/android\.hardware\.power-service-qti                       u:object_r:hal_power_default_exec:s0
 
 # Sensors
 /dev/akm09970                                                                                                                   u:object_r:hall_device:s0
