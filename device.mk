@@ -395,6 +395,10 @@ PRODUCT_BOOT_JARS += \
     QPerformance \
     UxPerformance
 
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf,$(TARGET_COPY_OUT_VENDOR)/etc/perf) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/lm,$(TARGET_COPY_OUT_VENDOR)/etc/lm)
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-nabu \
