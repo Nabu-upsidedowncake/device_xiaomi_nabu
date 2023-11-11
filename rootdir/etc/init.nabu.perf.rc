@@ -69,6 +69,24 @@ on post-fs-data
     # Disable zram readahead
     write /proc/sys/vm/page-cluster 0
 
+on boot
+    chown system system /dev/cpuset/cgroup.procs
+    chown system system /dev/cpuset/foreground/cgroup.procs
+    chown system system /dev/cpuset/background/cgroup.procs
+    chown system system /dev/cpuset/system-background/cgroup.procs
+    chown system system /dev/cpuset/top-app/cgroup.procs
+
+    chmod 0666 /dev/cpuset/foreground/cgroup.procs
+    chmod 0666 /dev/cpuset/background/cgroup.procs
+    chmod 0666 /dev/cpuset/system-background/cgroup.procs
+    chmod 0666 /dev/cpuset/top-app/cgroup.procs
+    chmod 0666 /dev/cpuset/cgroup.procs
+
+    chown system system /dev/stune/background/cgroup.procs
+    chown system system /dev/stune/top-app/cgroup.procs
+    chmod 0666 /dev/stune/background/cgroup.procs
+    chmod 0666 /dev/stune/top-app/cgroup.procs
+
 on property:vendor.post_boot.parsed=1
     # Runtime fs tuning
     write /sys/block/sda/queue/nr_requests 128
@@ -151,11 +169,9 @@ on property:vendor.post_boot.parsed=1
     write /dev/cpuctl/top-app/cpu.shares 20480
 
     # Setup CPU frequencies
-    write /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq 1209600
-    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq 1785600
-    write /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq 1171200
-    write /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq 1708800
-    write /sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq 1056000
+    write /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq 576000
+    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq 1209600
+    write /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq 1612800
     write /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq 1612800
 
     # configure governor settings for little cluster

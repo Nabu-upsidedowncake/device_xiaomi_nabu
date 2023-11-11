@@ -58,7 +58,7 @@ case "$target" in
 	echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
 
 	# Turn off scheduler boost at the end
-	echo 1 > /proc/sys/kernel/sched_boost
+	echo 0 > /proc/sys/kernel/sched_boost
 
 	# configure governor settings for silver cluster
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
@@ -92,7 +92,7 @@ case "$target" in
 		    echo 250 > $cpubw/bw_hwmon/up_scale
 		    echo 1600 > $cpubw/bw_hwmon/idle_mbps
 		    echo 14236 > $cpubw/max_freq
-            echo 40 > $cpubw/polling_interval
+                    echo 40 > $cpubw/polling_interval
 	    done
 
 	    for llccbw in $device/*cpu-llcc-ddr-bw/devfreq/*cpu-llcc-ddr-bw
@@ -108,7 +108,7 @@ case "$target" in
 		    echo 250 > $llccbw/bw_hwmon/up_scale
 		    echo 1600 > $llccbw/bw_hwmon/idle_mbps
 		    echo 6881 > $llccbw/max_freq
-            echo 40 > $llccbw/polling_interval
+                    echo 40 > $llccbw/polling_interval
 	    done
 
 	    for npubw in $device/*npu-npu-ddr-bw/devfreq/*npu-npu-ddr-bw
@@ -124,9 +124,40 @@ case "$target" in
 		    echo 0 > $npubw/bw_hwmon/guard_band_mbps
 		    echo 250 > $npubw/bw_hwmon/up_scale
 		    echo 0 > $npubw/bw_hwmon/idle_mbps
-            echo 40 > $npubw/polling_interval
+                    echo 40 > $npubw/polling_interval
 		    echo 0 > /sys/devices/virtual/npu/msm_npu/pwr
 	    done
+
+		    #Enable mem_latency governor for L3, LLCC, and DDR scaling
+		    for memlat in $device/*cpu*-lat/devfreq/*cpu*-lat
+		    do
+			cat $memlat/available_frequencies | cut -d " " -f 1 > $memlat/min_freq
+		    done
+
+		    #Enable compute governor for gold latfloor
+		    for latfloor in $device/*cpu-ddr-latfloor*/devfreq/*cpu-ddr-latfloor*
+		    do
+			cat $latfloor/available_frequencies | cut -d " " -f 1 > $latfloor/min_freq
+		    done
+
+		    #Gold L3 ratio ceil
+		    for l3silver in $device/*cpu0-cpu-l3-lat/devfreq/*cpu0-cpu-l3-lat
+		    do
+			cat $l3silver/available_frequencies | cut -d " " -f 1 > $l3silver/min_freq
+		    done
+
+		    #Gold L3 ratio ceil
+		    for l3gold in $device/*cpu4-cpu-l3-lat/devfreq/*cpu4-cpu-l3-lat
+		    do
+			cat $l3gold/available_frequencies | cut -d " " -f 1 > $l3gold/min_freq
+		    done
+
+		    #Prime L3 ratio ceil
+		    for l3prime in $device/*cpu7-cpu-l3-lat/devfreq/*cpu7-cpu-l3-lat
+		    do
+			cat $l3prime/available_frequencies | cut -d " " -f 1 > $l3prime/min_freq
+		    done
+
 	done
 
     # memlat specific settings are moved to seperate file under
